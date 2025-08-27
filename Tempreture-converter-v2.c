@@ -3,7 +3,7 @@
 int main() 
 {
     char unit = 'a';
-    char to_unit = 'a';
+    char to_unit = 'b';
     float C, F, K;
     double celsius, fahrenheit, kelvin;
 

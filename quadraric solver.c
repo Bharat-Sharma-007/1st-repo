@@ -2,7 +2,7 @@
 #include <math.h>
 int main() {
     double a, b, c, discriminant, root1, root2, realPart, imagPart;
-    printf("Enter coefficients a, b and c: ");
+    printf("Enter coefficients a, b and c:\n ");
     scanf("%lf %lf %lf", &a, &b, &c);
     discriminant = b * b - 4 * a * c;
     if (discriminant > 0) {
@@ -19,8 +19,8 @@ int main() {
         realPart = -b / (2 * a);
         imagPart = sqrt(-discriminant) / (2 * a);
         printf("Roots are complex and different.\n");
-        printf("Root 1 = %.2lf + %.2lfi\n", realPart, imagPart);
-        printf("Root 2 = %.2lf - %.2lfi\n", realPart, imagPart);
+        printf("Root 1 = %.2lf + i%.2lf\n", realPart, imagPart);
+        printf("Root 2 = %.2lf - i%.2lf\n", realPart, imagPart);
     }
     return 0;
 }

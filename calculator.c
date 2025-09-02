@@ -5,33 +5,34 @@ int main()
     float a, b;
     printf("Enter the first number:");
     scanf("%f", &a);
+    char c, waste;
+    printf("Enter the operator you want to use:");
+    scanf("%c", &waste);
+    scanf("%c", &c);
     printf("Enter the second number:");
     scanf("%f", &b);
-    int c;
-    printf("Enter the number next to the operator you want to do\n1 = +\n2 = -\n3 = *\n4 = /\n5 = % \n");
-    scanf("%d", &c);
     float d;
     d = fmod(a, b);
 
     switch (c)
     {
-    case 1:
+    case '+':
     printf("Your answer is: %.2f", a+b);
     break;
-    case 2:
+    case '-':
     printf("Your answer is: %.2f", a-b);
     break;
-    case 3:
+    case 'x':
     printf("Your answer is: %.2f", a*b);
     break;
-    case 4:
-    printf("Your answer is: %.2f", a/b);
+    case '/':
+    printf("Your answer is: %f", a/b);
     break;
-    case 5:
-    printf("Your answer is: %f", d);
+    case '%':
+    printf("Your answer is: %.1f", d);
     break;
     default:
-    printf("Enter a valid operator number");
+    printf("Enter a valid operator");
     }
     return 0;
 }

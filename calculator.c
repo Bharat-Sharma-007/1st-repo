@@ -28,7 +28,7 @@ int main()
     printf("Your answer is: %.2f", a/b);
     break;
     case 5:
-    printf("Your answer is: %.2f", d);
+    printf("Your answer is: %f", d);
     break;
     default:
     printf("Enter a valid operator number");
